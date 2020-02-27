@@ -6,7 +6,7 @@
 /*   By: tmaarela <tmaarela@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 14:31:10 by tmaarela          #+#    #+#             */
-/*   Updated: 2020/01/29 12:04:08 by tmaarela         ###   ########.fr       */
+/*   Updated: 2020/02/27 16:26:56 by tmaarela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_xy		to_iso(t_xyz *xyz, double zoom, int proj)
 	if (proj == 1)
 	{
 		return ((t_xy){
-			(SCREEN_W / 2 + xyz->x * (xyz->y / 200) - xyz->y),
+			(SCREEN_W / 2 + xyz->x + xyz->x * (xyz->y / 200) - xyz->y),
 			(SCREEN_H / 2 + xyz->y - xyz->z * (xyz->y / 40))
 		});
 	}

@@ -21,7 +21,7 @@ all: $(NAME)
 
 $(NAME):
 	make -C libft re
-	gcc $(FLAGS) -o $(NAME) $(SRCS) -L./libft/ -lft $(MLXI) -g
+	gcc $(FLAGS) -o $(NAME) $(SRCS) -L./libft/ -lft $(MLXI)
 	@echo "$(NAME): $(GREEN)$(NAME) was created!$(END)"
 
 clean:
