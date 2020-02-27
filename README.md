@@ -12,4 +12,4 @@ WASD - move canvas
 ```
 For example, a map like Pylone (maps/pylone.fdf) would produce a result like this, depending on projection:
 
-
+![Image](https://imgur.com/TsWFVds)
